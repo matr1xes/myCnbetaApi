@@ -1,0 +1,4 @@
+{
+  "db": "mongodb://localhost/cnbeta_test",
+  "port": 5000
+}
