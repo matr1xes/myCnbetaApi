@@ -9,6 +9,7 @@
   "author": "Matrixes",
   "license": "MIT",
   "dependencies": {
+    "@koa/cors": "^3.0.0",
     "config": "^3.2.0",
     "jshint": "^2.10.2",
     "koa": "^2.7.0",

@@ -1,11 +1,13 @@
 const Koa = require("koa");
 const config = require("config");
+const cors = require("@koa/cors");
 const app = new Koa();
 
 require("./startup/db")();
 
 const router = require("./routes");
-app.use(router.routes()).use(router.allowedMethods());
+app.use(cors());
+app.use(router.routes());
 
 const port = process.env.PORT || config.get("port");
 
